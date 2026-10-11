@@ -8,8 +8,8 @@ class CorseGroup():
     def __str__(self):
         classmates_str = ""
         for classmate in self.classmates:
-            classmates_str += classmate
-        
-        if classmates_str.endswith(", "):
-            classmates_str = classmates_str[:-2]
+            if classmate != self.student:
+                if classmates_str:
+                    classmates_str += ", "
+                classmates_str += str(classmate)
         return f"{self.student} учится вместе с: {classmates_str}"

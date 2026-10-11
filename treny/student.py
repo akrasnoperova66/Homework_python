@@ -6,4 +6,4 @@ class Student():
         self.curs = curs
 
     def __str__(self):
-        return(self.name, self.soname, self.age + "лет" + self.curs + "курс")
+        return f"{self.name} {self.soname} , {self.age} лет, {self.curs} курс"
