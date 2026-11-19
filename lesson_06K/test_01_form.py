@@ -35,7 +35,7 @@ def test_form_fill():
     for field in chek_field_id:
         assert "alert-success" in driver.find_element(By.ID, field).get_attribute("class")
 
-    driver.quit
+    driver.quit()
 
 
 

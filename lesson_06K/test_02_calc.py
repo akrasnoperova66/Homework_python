@@ -6,7 +6,7 @@ from selenium.webdriver.support import expected_conditions as EC
 
 def test_calculator():
     driver = webdriver.Chrome()
-    WebDriverWait(driver, 10)
+
 
     driver.get("https://bonigarcia.dev/selenium-webdriver-java/slow-calculator.html")
     driver.maximize_window()
